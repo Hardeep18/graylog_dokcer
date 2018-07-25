@@ -8,8 +8,8 @@ services:
   graylog:
     image: graylog2/server:2.2.1-1
     environment:
-      GRAYLOG_PASSWORD_SECRET: somesaltpassword
-      GRAYLOG_ROOT_PASSWORD_SHA2: 5D5E792708BFA15F0AB42E817B4E69379777D2722E0529DFB031C0B847DB137D 
+      GRAYLOG_PASSWORD_SECRET: somepassword
+      GRAYLOG_ROOT_PASSWORD_SHA2: 
       GRAYLOG_WEB_ENDPOINT_URI: http://127.0.0.1:9000/api
     depends_on:
       - mongo
